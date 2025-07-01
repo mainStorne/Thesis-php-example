@@ -10,14 +10,17 @@
 		"--add-host=thesis.com=192.168.0.199"
 	],
 	// Features to add to the dev container. More info: https://containers.dev/features.
-	"forwardPorts": [
-		9090
+	// "forwardPorts": [
+	// 	9090
+	// ],
+	"appPort": [
+		"8080:8080"
 	],
 	// "customizations": {},
 	// Configure tool-specific properties.
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "cd php && php -S 0.0.0.0:9090"
+	"postCreateCommand": "cd php && php -S 0.0.0.0:8080"
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 }

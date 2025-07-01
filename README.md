@@ -17,3 +17,4 @@ This repository uses [devcontainer](https://containers.dev/) technology thanks t
 ```
 
 4. Start devcontainer
+5. Open http://localhost:8080
